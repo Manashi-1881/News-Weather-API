@@ -1,0 +1,17 @@
+SORT 10 Gigabytes of unsorted integer data with 1 gigs of ram and 240 Gigabyte of hard drive.:
+
+1. Read 1 GB of the data in RAM and sort by using quicksort.
+2. Write the sorted data to disk.
+3. Repeat steps 1 and 2 until all of the data is in sorted 1GB chunks (there are 10 GB / 1 GB = 10 chunks), which now need to be merged into one single output file.
+4. Now read first index element from each chunk (10 Chunk = 10 elements) and create a MIN-HEAP. A MIN-HEAP will be created and smallest element will be the parent.
+5. Now fetch the first elment from Heap and store in your disk.
+6. Next read element of second index of first chunk and and push it to MIN-HEAP tree at parent position.
+7. Next perform MIN-Heapify to sort all the element.
+8. Next REPEAT  STEP-5.
+9. Now you will perform STEP-6 but the difference is you will read second element of second chunk.
+10. In this way you will get a SORTED ARRAY on your disk.
+11. Once all CHUNK is read, finally you will be lef with only 10 elements.
+12. In this case you only need to fetch parent element, decrease the Heap by index one and MIN-HEAPIFY the tree.
+
+
+MIN-HEAP :: A Min-Heap is a complete binary tree in which the value in each internal node is smaller than or equal to the values in the children of that node. 

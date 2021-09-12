@@ -1,0 +1,26 @@
+{
+  "name": "userapi",
+  "version": "1.0.0",
+  "description": "Rest API for user login/logout/signup functionality to get weather and news reports",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Manashi Mazumder",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.23",
+    "newsapi": "^2.4.1",
+    "nodemon": "^2.0.12"
+  },
+  "devDependencies": {
+    "jest": "^27.1.1",
+    "supertest": "^6.1.6"
+  }
+}
